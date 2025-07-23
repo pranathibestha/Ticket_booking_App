@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Confirmed</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container text-center">
+        <h2>✅ Booking Confirmed!</h2>
+        <p>Thanks <strong>{{ name }}</strong>, your <strong>{{ ticket_type }}</strong> ticket(s) for <strong>{{ event }}</strong> have been booked successfully.</p>
+        <p><strong>No. of Tickets:</strong> {{ tickets }}</p>
+        <a href="/" class="btn btn-outline-primary">Go Home</a>
+    </div>
+</body>
+</html>
